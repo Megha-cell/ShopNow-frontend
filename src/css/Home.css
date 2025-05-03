@@ -1,0 +1,56 @@
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Clean gradient: top-left soft blue to bottom-right light gray */
+  background: linear-gradient(135deg, #e3f2fd, #f1f8ff, #e0f7fa);
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.home-content {
+  text-align: center;
+  max-width: 700px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.home-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1a237e;
+  margin-bottom: 20px;
+}
+
+.brand-name {
+  color: #1565c0;
+  font-weight: 600;
+}
+
+.home-subtitle {
+  font-size: 1.2rem;
+  color: #455a64;
+  margin-bottom: 30px;
+}
+
+.home-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 1rem;
+  background: linear-gradient(to right, #42a5f5, #1e88e5);
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(25, 118, 210, 0.3);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.home-btn:hover {
+  background: linear-gradient(to right, #1e88e5, #1565c0);
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

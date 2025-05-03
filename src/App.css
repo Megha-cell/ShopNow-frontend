@@ -1,0 +1,28 @@
+/* Apply the gradient background to the entire body */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #e3f2fd, #f1f8ff, #e0f7fa);
+  min-height: 100vh; /* Ensure the background covers the entire viewport */
+}
+
+/* Ensure the layout wrapper takes full height */
+.d-flex.flex-column.min-vh-100 {
+  min-height: 100vh;
+}
+
+/* Styling for the root element to contain the main content */
+#root {
+  width: 100%;
+}
+
+/* Additional style for main content */
+main.flex-fill {
+  flex-grow: 1;
+  background: transparent; /* Make sure the main content background is transparent */
+}
+
+/* Optional: Add any additional card or content styling here */
+.card {
+  padding: 2em;
+}
