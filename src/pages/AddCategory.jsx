@@ -23,7 +23,7 @@ function AddCategory() {
 
   const fetchCategories = async () => {
     try {
-      const res = await secureFetch("${apiUrl}/api/categories");
+      const res = await secureFetch(`${apiUrl}/api/categories`);
       const data = await res.json();
       setCategories(data);
     } catch (error) {
@@ -35,7 +35,7 @@ function AddCategory() {
     e.preventDefault();
 
     try {
-      const res = await secureFetch("${apiUrl}/api/categories", {
+      const res = await secureFetch(`${apiUrl}/api/categories`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
