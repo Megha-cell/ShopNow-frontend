@@ -1,6 +1,6 @@
 import { useState } from "react";
-//import secureAxios from "../utils/secureAxios";
-import axios from 'axios';
+import secureAxios from "../utils/secureAxios";
+//import axios from 'axios';
 
 import { useNavigate } from "react-router-dom";
 import "../css/Login.css"; // Use same styling as login
@@ -27,9 +27,9 @@ function Register() {
     setError("");
     setSuccess("");
     try {
-      await axios.post("/auth/register", formData);
+      await secureAxios.post("/auth/register", formData);
 
-      const loginRes = await axios.post("/auth/login", {
+      const loginRes = await secureAxios.post("/auth/login", {
         email: formData.email,
         password: formData.password
       });
