@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import AdminDashboard from "./pages/AdminDashboard";
+import AdminDashboard from "./pages/AdminDashboard";//import Amin Dasboard
 import RoleRoute from "./components/RoleRoute";
 import Home from "./pages/Home";
 import About from "./pages/About";
