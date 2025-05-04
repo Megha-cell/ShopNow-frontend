@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { secureFetch } from '../utils/secureFetch';
+//import { secureFetch } from '../utils/secureFetch';
 import '../css/Login.css'; // Scoped CSS for Instagram style
 import { toast } from "react-toastify";
 
@@ -14,7 +14,7 @@ function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await secureFetch(`${apiUrl}/api/auth/login`, {
+      const res = await fetch(`${apiUrl}/api/auth/login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
